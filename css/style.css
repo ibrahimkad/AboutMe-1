@@ -5,19 +5,31 @@ body{
 }
 
 .ftitle {
+    background-color: rgb(235, 235, 235);
     text-align: center;
-    padding: 4px;
+    padding: 20px;
     font-size: 32px;
 }
 
-.bio {
+div .bio{
+    color: rgb(71, 71, 71);
+    width: 40%;
+    text-align: justify;
     font-size: 22px;
-    padding: 40px 4px ;
-    text-align: center;
+    padding: 20px 8px ;
+    line-height: 25px;
+}
+
+.img{
+    padding:20px 2px ;
+    width: 30%;
+    float: right;
 }
 
 #userName{
-    text-align: center;
+    padding-left: 8px;
+    width: 40%;
+    text-align: justify;
     font-size: 26px;
-    color: rgb(203, 84, 226);
+    color: rgb(55, 186, 226);
 }

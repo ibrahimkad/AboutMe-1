@@ -31,9 +31,11 @@ var age = prompt('Do you think I older than 22? ');
 switch (age.toLowerCase()) {
     case 'yes':
         alert('bad answer, I\'m not older than 22');
+        console.log('wrong answer');
         break;
     case 'no':
         alert('good answer, I\'m younger than 22');
+        console.log('good answer');
         break;
 }
 
@@ -44,9 +46,11 @@ var place = prompt('do you think I live in Amman?');
 switch (place.toLowerCase()) {
     case 'yes':
         alert('yes I live in Amman');
+        console.log('good answer');
         break;
     case 'no':
         alert('bad answer, I do live in Amman');
+        console.log('wrong answer');
         break;
 
 }
@@ -58,9 +62,11 @@ var cat = prompt('Do you think I love cats?')
 switch (cat.toLowerCase()) {
     case 'yes':
         alert('yess I love cats so much');
+        console.log('good answer');
         break;
     case 'no':
         alert('wrong answer, I like cats a lot');
+        console.log('wrong answer');
         break;
 }
 
