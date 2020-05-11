@@ -1,0 +1,23 @@
+body{
+    background-color: #1f1f1f;
+    color: rgb(55, 186, 226);
+    font-family: 'lucida sans',Arial, Helvetica, sans-serif;
+}
+
+.ftitle {
+    text-align: center;
+    padding: 4px;
+    font-size: 32px;
+}
+
+.bio {
+    font-size: 22px;
+    padding: 40px 4px ;
+    text-align: center;
+}
+
+#userName{
+    text-align: center;
+    font-size: 26px;
+    color: rgb(203, 84, 226);
+}
