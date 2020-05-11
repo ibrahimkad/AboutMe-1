@@ -2,10 +2,10 @@
 
 // intro for user info
 var userName = prompt('What\'s your name? ');
-alert('welcome to my webpage ' + userName);
+alert('welcome to my web page ' + userName);
 console.log('your username is ' + userName);
 
-document.getElementById("userName").innerHTML = 'welcome to my webpage ' + userName;
+document.getElementById("userName").innerHTML = 'welcome to my web page ' + userName;
 
 // first question 
 
