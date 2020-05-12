@@ -5,14 +5,14 @@ body{
 }
 
 .ftitle {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(58, 58, 58);
     text-align: center;
     padding: 20px;
     font-size: 32px;
 }
 
 div .bio{
-    color: rgb(71, 71, 71);
+    color: rgb(172, 172, 172);
     width: 40%;
     text-align: justify;
     font-size: 22px;
@@ -28,8 +28,34 @@ div .bio{
 
 #userName{
     padding-left: 8px;
+    margin-bottom: 6px;
+    text-align: center;
+    font-size: 26px;
+    color: rgb(201, 102, 240);
+}
+
+
+.EE p{
+    color: rgb(172, 172, 172);
     width: 40%;
     text-align: justify;
-    font-size: 26px;
-    color: rgb(55, 186, 226);
+    font-size: 22px;
+    padding: 20px 8px ;
+    line-height: 25px;
+}
+
+
+.movielist li{
+    width: 40%;
+    font-size: 16px;
+    padding: 20px 8px ;
+    line-height: 0px;
+}
+
+
+.rights{
+    background-color: rgb(58, 58, 58);
+    text-align: center;
+    padding: 6px 14px;
+    font-size: 14px;
 }

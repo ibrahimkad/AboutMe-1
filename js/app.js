@@ -1,11 +1,13 @@
-'use strict'
+'use strict';
+
+var correctAnswer = 0;
 
 // intro for user info
 var userName = prompt('What\'s your name? ');
 alert('welcome to my web page ' + userName);
 console.log('your username is ' + userName);
 
-document.getElementById("userName").innerHTML = 'welcome to my web page ' + userName;
+document.getElementById("userName").innerHTML = 'welcome  ' + userName;
 
 // first question 
 
@@ -15,6 +17,7 @@ switch (movie.toLowerCase()) {
     case 'yes':
         alert('yes I like to watch a lot of movies');
         console.log('good answer');
+        correctAnswer++;
         break;
 
     case 'no':
@@ -36,6 +39,7 @@ switch (age.toLowerCase()) {
     case 'no':
         alert('good answer, I\'m younger than 22');
         console.log('good answer');
+        correctAnswer++;
         break;
 }
 
@@ -47,6 +51,7 @@ switch (place.toLowerCase()) {
     case 'yes':
         alert('yes I live in Amman');
         console.log('good answer');
+        correctAnswer++;
         break;
     case 'no':
         alert('bad answer, I do live in Amman');
@@ -63,6 +68,7 @@ switch (cat.toLowerCase()) {
     case 'yes':
         alert('yess I love cats so much');
         console.log('good answer');
+        correctAnswer++;
         break;
     case 'no':
         alert('wrong answer, I like cats a lot');
@@ -70,22 +76,81 @@ switch (cat.toLowerCase()) {
         break;
 }
 
-// sixth question
+// fivth question
 
-var survey = prompt('Did you enjoy with the questions?');
+var coffee = prompt('Did you think I like coffee?');
 
-switch (survey.toLowerCase()) {
+switch (coffee.toLowerCase()) {
     case 'yes':
-        alert('Thank you, I will ask you more next time');
+        alert('wrong answer I don\'t like it ');
         break;
     case 'no':
-        alert('well that\'s too bad I will ask you less questions next time');
+        alert('correct answer');
+        correctAnswer++;
         break;
 }
-// end of the questions
+//  sexth question 
 
-alert('good job ' + userName + ' you did very well Thank you');
+var abdAge = 20;
+
+for (var i = 0; i <= 3; i++) {
+    var myAge = prompt('can you guess my age?');
+
+    if (myAge > abdAge) {
+        alert('too high');
+    }
+    else if (myAge < abdAge) {
+        alert('too low');
+    }
+    else if (myAge == abdAge) {
+        alert('correct');
+        correctAnswer++;
+        break;
+    }
+}
+
+
+//  array and question  7th question
+
+var food = ['pizza', 'chicken', 'shawrma', 'french fries', 'tacos'];
+
+for (var i = 0; i < 6; i++) {
+    var favfood = prompt('what do you think are my favourite food?');
+
+    if (favfood == food[0] || favfood == food[1] || favfood == food[2] || favfood == food[3] || favfood == food[4] || favfood == food[5]) {
+        alert('good answer');
+        correctAnswer++;
+        break;
+    }
+    else if (food !== favfood) {
+        alert('wrong answer');
+    }
+}
+
+console.log(food.length);
+alert(food);
 
 
 
+//   result 
+alert('you did answer ' + correctAnswer + ' questions correct, well done');
 
+
+//  for loop statmente 
+// var cats = 2;
+
+// for (var i = 0; i <= 5; i++) {
+//     var count = prompt('how many cats do I have ?');
+
+//     if (count > cats) {
+//         alert('too high value');
+//     }
+//     else if (count < cats) {
+//         alert('too low value');
+//     }
+//     else if(count == cats){
+//         alert('good answer');
+//         correctAnswer++;
+//         break;
+//     }
+// 
