@@ -7,107 +7,132 @@ var userName = prompt('What\'s your name? ');
 alert('welcome to my web page ' + userName);
 console.log('your username is ' + userName);
 
-document.getElementById("userName").innerHTML = 'welcome  ' + userName;
+document.getElementById('userName').innerHTML = 'welcome  ' + userName;
 
-// first question 
+// first question
 
-var movie = prompt('Do you think I like movies? ');
+function movie() {
+  var movie = prompt('Do you think I like movies? ');
 
-switch (movie.toLowerCase()) {
-    case 'yes':
-        alert('yes I like to watch a lot of movies');
-        console.log('good answer');
-        correctAnswer++;
-        break;
+  switch (movie.toLowerCase()) {
+  case 'yes':
+    alert('yes I like to watch a lot of movies');
+    console.log('good answer');
+    correctAnswer++;
+    break;
 
-    case 'no':
-        alert('Wrong answer because I do like movies');
-        console.log('wrong answer');
-        break;
-}
-
-// second question 
-
-var age = prompt('Do you think I older than 22? ');
-
-
-switch (age.toLowerCase()) {
-    case 'yes':
-        alert('bad answer, I\'m not older than 22');
-        console.log('wrong answer');
-        break;
-    case 'no':
-        alert('good answer, I\'m younger than 22');
-        console.log('good answer');
-        correctAnswer++;
-        break;
-}
-
-//  third question 
-
-var place = prompt('do you think I live in Amman?');
-
-switch (place.toLowerCase()) {
-    case 'yes':
-        alert('yes I live in Amman');
-        console.log('good answer');
-        correctAnswer++;
-        break;
-    case 'no':
-        alert('bad answer, I do live in Amman');
-        console.log('wrong answer');
-        break;
+  case 'no':
+    alert('Wrong answer because I do like movies');
+    console.log('wrong answer');
+    break;
+  }
 
 }
+movie();
 
-// fourth question 
 
-var cat = prompt('Do you think I love cats?')
+// second question
+function age() {
+  var age = prompt('Do you think I older than 22? ');
 
-switch (cat.toLowerCase()) {
-    case 'yes':
-        alert('yess I love cats so much');
-        console.log('good answer');
-        correctAnswer++;
-        break;
-    case 'no':
-        alert('wrong answer, I like cats a lot');
-        console.log('wrong answer');
-        break;
+
+  switch (age.toLowerCase()) {
+  case 'yes':
+    alert('bad answer, I\'m not older than 22');
+    console.log('wrong answer');
+    break;
+  case 'no':
+    alert('good answer, I\'m younger than 22');
+    console.log('good answer');
+    correctAnswer++;
+    break;
+  }
+
 }
+age();
 
+
+
+//  third question
+function place() {
+
+
+  var place = prompt('do you think I live in Amman?');
+
+  switch (place.toLowerCase()) {
+  case 'yes':
+    alert('yes I live in Amman');
+    console.log('good answer');
+    correctAnswer++;
+    break;
+  case 'y':
+    alert('yes I live in Amman');
+    console.log('good answer');
+    correctAnswer++;
+    break;
+  case 'no':
+    alert('bad answer, I do live in Amman');
+    console.log('wrong answer');
+    break;
+
+  }
+}
+place();
+
+// fourth question
+function cat() {
+  var cat = prompt('Do you think I love cats?');
+
+  switch (cat.toLowerCase()) {
+  case 'yes':
+    alert('yess I love cats so much');
+    console.log('good answer');
+    correctAnswer++;
+    break;
+  case 'no':
+    alert('wrong answer, I like cats a lot');
+    console.log('wrong answer');
+    break;
+  }
+}
+cat();
 // fivth question
+function coffee() {
+  var coffee = prompt('Did you think I like coffee?');
 
-var coffee = prompt('Did you think I like coffee?');
-
-switch (coffee.toLowerCase()) {
-    case 'yes':
-        alert('wrong answer I don\'t like it ');
-        break;
-    case 'no':
-        alert('correct answer');
-        correctAnswer++;
-        break;
+  switch (coffee.toLowerCase()) {
+  case 'yes':
+    alert('wrong answer I don\'t like it ');
+    break;
+  case 'no':
+    alert('correct answer');
+    correctAnswer++;
+    break;
+  }
 }
-//  sexth question 
+coffee();
 
-var abdAge = 20;
+//  sexth question
+function abdAge() {
+  var abdAge = 20;
 
-for (var i = 0; i <= 3; i++) {
-    var myAge = prompt('can you guess my age?'); 
+  for (var i = 0; i <= 3; i++) {
+    var myAge = prompt('can you guess my age?');
 
     if (myAge > abdAge) {
-        alert('too high');
+      alert('too high');
     }
     else if (myAge < abdAge) {
-        alert('too low');
+      alert('too low');
     }
     else if (myAge == abdAge) {
-        alert('correct');
-        correctAnswer++;
-        break;
+      alert('correct');
+      correctAnswer++;
+      break;
     }
+  }
 }
+abdAge();
 
 
 //  array and question  7th question
@@ -132,34 +157,36 @@ for (var i = 0; i <= 3; i++) {
 
 
 // array and question  7th question
-var food = ['pizza', 'chicken', 'shawrma', 'french fries', 'tacos'];
-var i = 0;
-var answer = false;
-while (i < 7) {
+function food() {
+  var food = ['pizza', 'chicken', 'shawrma', 'french fries', 'tacos'];
+  var i = 0;
+  var answer = false;
+  while (i < 7) {
     var favfood = prompt('what do you think are my favourite food?');
-    for ( var e=0; e<food.length; e++) {
-        if(favfood == food[e]) {
-            alert('correct answer');
-            answer = true;
-            break;
-        }
-        else {
-            alert('try again');
-            break;
-        }
-    }
-    if(answer){
+    for (var e = 0; e < food.length; e++) {
+      if (favfood == food[e]) {
+        alert('correct answer');
+        answer = true;
         break;
+      }
+      else {
+        alert('try again');
+        break;
+      }
     }
-    i++
+    if (answer) {
+      break;
+    }
+    i++;
+  }
 }
+food();
 
-
-//   result 
+//   result
 alert('you did answer ' + correctAnswer + ' questions correct, well done');
 
 
-//  for loop statmente 
+//  for loop statmente
 // var cats = 2;
 
 // for (var i = 0; i <= 5; i++) {
@@ -176,4 +203,4 @@ alert('you did answer ' + correctAnswer + ' questions correct, well done');
 //         correctAnswer++;
 //         break;
 //     }
-// 
+//
