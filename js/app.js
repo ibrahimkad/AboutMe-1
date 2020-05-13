@@ -94,7 +94,7 @@ switch (coffee.toLowerCase()) {
 var abdAge = 20;
 
 for (var i = 0; i <= 3; i++) {
-    var myAge = prompt('can you guess my age?');
+    var myAge = prompt('can you guess my age?'); 
 
     if (myAge > abdAge) {
         alert('too high');
@@ -112,24 +112,47 @@ for (var i = 0; i <= 3; i++) {
 
 //  array and question  7th question
 
+// var food = ['pizza', 'chicken', 'shawrma', 'french fries', 'tacos'];
+
+// for (var i = 0; i < 6; i++) {
+//     var favfood = prompt('what do you think are my favourite food?');
+
+//     if (favfood == food[0] || favfood == food[1] || favfood == food[2] || favfood == food[3] || favfood == food[4] || favfood == food[5]) {
+//         alert('good answer');
+//         correctAnswer++;
+//         break;
+//     }
+//     else if (food !== favfood) {
+//         alert('wrong answer');
+//     }
+// }
+
+// console.log(food.length);
+// alert(food);
+
+
+// array and question  7th question
 var food = ['pizza', 'chicken', 'shawrma', 'french fries', 'tacos'];
-
-for (var i = 0; i < 6; i++) {
+var i = 0;
+var answer = false;
+while (i < 7) {
     var favfood = prompt('what do you think are my favourite food?');
-
-    if (favfood == food[0] || favfood == food[1] || favfood == food[2] || favfood == food[3] || favfood == food[4] || favfood == food[5]) {
-        alert('good answer');
-        correctAnswer++;
+    for ( var e=0; e<food.length; e++) {
+        if(favfood == food[e]) {
+            alert('correct answer');
+            answer = true;
+            break;
+        }
+        else {
+            alert('try again');
+            break;
+        }
+    }
+    if(answer){
         break;
     }
-    else if (food !== favfood) {
-        alert('wrong answer');
-    }
+    i++
 }
-
-console.log(food.length);
-alert(food);
-
 
 
 //   result 
